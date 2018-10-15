@@ -7,7 +7,7 @@ import java.util.Timer;
 public class Main {
     public static void main(String[] args) {
         int[] integers = {1, 2, 4, 5, 6,12,3, 1,23 ,123, 12,31,23 ,123, 5,4, 34,5,345, 67,5,756,86,78,67};
-        List<Integer> integers2 = Arrays.asList(1, 3, 2, 4, 5, 6,12,3, 1,23, 3 ,123, 12,31,23 ,123, 5,4, 34,5,345, 67,5,756,86,78,67);
+        List<Integer> integers2 = Arrays.asList(1, 3, 2, 4, 5, 6,12,3, 1,23, 3 ,123, 12,31, 12312 , 678, 4, 88,8,9846,213,3,4621,4,68,7,13223 ,123, 5,4, 34,5,345, 67,5,756,86,78,67);
 
 
 
@@ -39,7 +39,8 @@ public class Main {
 //        InsertionSort.insertionSort(integers2, 0, integers2.size() - 1);
 //        BubbleSort.bubbleSort(integers2, 0, integers2.size() - 1);
 //        SelectionSort.selectionSort(integers2, 0, integers2.size() - 1);
-        MergeSort.mergeSort(integers2, 0, integers2.size() - 1);
+//        MergeSort.mergeSort(integers2, 0, integers2.size() - 1);
+        QuickSort.quickSort(integers2, 0, integers2.size() - 1);
 
         long end1 = System.nanoTime();
         System.out.println(integers2);
